@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsas kilian Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a352dd30d.js" crossorigin="anonymous"></script>s
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/kilian-logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#situation">Situation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>BTS  SIO/SISR 2nd année</p>
+                <h1>Je suis kilian étudiant en 2nd année de BTS, voici mon Portfolio. 
+                    <br>Il vous présentera mon parcours mais aussi les différentes situation au quel j'ai fait fasse pendant mon parcours.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Je suis actuellement étudiant en BTS SISR/SIO, lors de mon année précédente </p>
+                    <div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('competence')">Compétence</p>
+                            <p class="tab-links" onclick="opentab('experience')">Expérience</p>
+                            <p class="tab-links" onclick="opentab('diplome')">Diplôme</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="competence'">
+                            <ul>
+                                <li><span>Réseau</span><br>Installation, paramétrage et dépannage d'OS Client.(Linux, Windows,...)<br>Installation, dépannage, supervision d'infrastructures réseaux. (vpn, routage, dhcp, pare feu ...)</li>
+                                <li><span>Support</span><br>Support utilisateur/Gestion de Parc(office 365, Google suite, antivirus, imprimante réseaux ...)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023</span><br>Alternance chez iLevel (technicien Macintosh)</li>
+                                <li><span>2021-2023</span><br>Équipiers polyvalent chez Mc Donald's (job étudiant)</li>
+                                <li><span>2019-2020</span><br>Alternance chez EUROMAIR (Recherche et Développement)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="diplome">
+                            <ul>
+                                <li><span>2019</span><br>Baccalauréat option Informatique et Science du Numérique</li>
+                                <li><span>2022</span><br>CCNAv7& Introduction aux réseaux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------Situation-------- -->
+<div id="situation">
+    <div class="container">
+        <h1 class="sub-title">Situations</h1>
+        <div class="situation-list">
+            <div>
+                <i class="fas fa-light fa-globe"></i>
+                <h2>Déploiement de système Starlink et de borne wifi</h2>
+                <p>En intervention nous avons installer une antenne Starlink ainsi que 5 borne wifi, cela m'as permis de découvrir les interface des router Unify et de me familiariser avec leurs initialisation</p>
+            </div>
+        </div>
+        <div class="situation-list">
+            <div>
+                <i class="fas fa-server"></i>
+                <h2>Creation d'un MITM (man in the middle)</h2>
+                <p>Au travers de pfSense et plus précisément j'ai récupérer les logs de connection du réseau sur le quel mon proxy est connecter et je les stocke pendant 1 an sur un serveur syslog</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------Contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row"> 
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>kilian.elsas.ek@gmail.com</p>
+                <p><i class="fas fa-phone"></i>06-51-05-17-49</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kilian-elsas/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/Tableau de synthèse Épreuve E4.pdf" download class="btn btn2">Notation</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your@email.com" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Perso</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/Root-me.jpg">
+                <div class="layer">
+                    <h3>Root-me</h3>
+                    <p>ce site me permet de découvrir de nouvelle technologie et de me maintenir a jour tout en développement des skills concernant la cybersécurité</p>
+                </div>
+                <img src="images/tryhackme.png">
+                <div class="layer">
+                    <h3>Try hack me</h3>
+                    <p>site me permettant d'apprendre aU travers de situation plus pédagogique et préparer la cybersécurité</p>
+                </div>
+                <img src="images/SYD.jpg">
+                <div class="layer">
+                    <h3>SYD</h3>
+                    <p>application pour un projet fictif visant a informe en temps réel sur la consommation d'alcool du client</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="animation.js"></script>
+</body>
+</html>
